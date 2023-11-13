@@ -11,14 +11,7 @@ const questions = [
     type: "input",
     name: "title",
     message: "What is your project's title?",
-    validate: (titleInput) => {
-      if (titleInput) {
-        return true;
-      } else {
-        console.log("Please enter your title!");
-        return false;
-      }
-    },
+    
   },
   {
     type: "list",
@@ -37,6 +30,38 @@ const questions = [
     name: "usage",
     message: "Please provide instructions and examples pf the project usage.",
   },
+
+  {
+    type: "input",
+    name: "installation",
+    message: "Please provide steps required to install your project.",
+  },
+
+
+  {
+    type: 'input',
+    name: 'test',
+    message: 'How can a user test your software?'
+}
+  {
+    type: "input",
+    name: "credits",
+    message: "Please list the collaborators and their github profiles.",
+  },
+  {
+    type: "input",
+    name: "username",
+    message: "What is your github user name?"
+},
+{
+    type: "input",
+    name: "repo",
+    message: "What is your repo link?"
+},
+
+
+
+
 ];
 
 // TODO: Create a function to write README file
