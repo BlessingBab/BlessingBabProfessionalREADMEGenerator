@@ -14,7 +14,7 @@ const questions = [
     
   },
   {
-    type: "list",
+    type: "license",
     name: "license",
     message: "Which license will you use for your project?",
     choices: ["agpl", "apache", "mit", "no license"],
@@ -52,16 +52,19 @@ const questions = [
     name: "credits",
     message: "Please list the collaborators and their github profiles.",
   },
+
+  {
+    type: "input",
+    name: "repo",
+    message: "What is your repo link?"
+},
+
   {
     type: "input",
     name: "username",
     message: "What is your github user name?"
 },
-{
-    type: "input",
-    name: "repo",
-    message: "What is your repo link?"
-},
+
 
 
 
