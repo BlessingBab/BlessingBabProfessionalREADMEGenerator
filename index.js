@@ -24,7 +24,11 @@ const questions = [
     name: "description",
     message: "Please provide your project's description",
   },
-
+  {
+    type: "input",
+    name: "screenshot",
+    message: "Please insert the screeshot of the project.",
+  },
   {
     type: "input",
     name: "usage",
@@ -86,6 +90,8 @@ function writeToFile() {
 // TODO: Create a function to initialize app
 const init = () => {
   return inquirer.prompt(questions).then((readmeData) => {
+    console.log("Creating Professional REadME.md File");
+    writeToFile("./")
     return readmeData;
   });
 };
